@@ -1,0 +1,28 @@
+@use '../util' as *;
+@use 'globals';
+/*===== CLASS CSS ======*/
+
+
+.section {
+	padding: 4rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle {
+	text-align: center;
+}
+
+.section-title,
+.section-subtitle {
+	text-align: center;
+}
+
+.section-title {
+	font-size: var(--h1-font-size);
+	color: globals.$color-primary;
+	margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+	display: block;
+}

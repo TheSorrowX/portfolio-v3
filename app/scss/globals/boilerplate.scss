@@ -1,15 +1,18 @@
-html {
-	font-size: 100%;
-	box-sizing: border-box;
+/*===== VARIABLES CSS =====*/
+:root {
+	/*===== Margenes =====*/
+	--mb-1: .5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+
+	/*===== z index =====*/
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
+$header-height:3rem;
 
-body {
-	margin: 0;
-	padding: 0;
-}
