@@ -106,8 +106,9 @@ function sendEmail() {
     message: message.value,
   };
 
-  emailjs.send("default_service", "template_xb5jimy", templateParams).then(
+  emailjs.send("service_rgova1h", "template_xb5jimy", templateParams,"user_QY8qjnp5zdmSAGRPVmlI9").then(
     function (response) {
+      console.log(response);
       success.classList.toggle("hidden");
       name.value = "";
       email.value = "";
@@ -117,6 +118,7 @@ function sendEmail() {
       }, 3000);
     },
     function (err) {
+      console.log(err);
       error.classList.toggle("hidden");
       setTimeout(function () {
         error.classList.toggle("hidden");

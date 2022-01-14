@@ -223,14 +223,14 @@
                     </div>
                 </div>
 
-                <form class="contact__form" onSubmit="sendEmail()">
+                <form class="contact__form" onSubmit="return false;">
                     <div class="contact__inputs">
                         <input type="text" id="txt_name" placeholder="Name" class="contact__input">
                         <input type="email" id="txt_email" placeholder="Email" class="contact__input">
                         <textarea name="" id="txt_message" cols="0" rows="6" placeholder="Your Message"
                             class="contact__input"></textarea>
                     </div>
-                    <input type="submit" value="Send Message" class="button contact__button">
+                    <input type="button" onClick="sendEmail()" value="Send Message" class="button contact__button">
                 </form>
 
             </div>
